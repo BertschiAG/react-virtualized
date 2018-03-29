@@ -362,7 +362,8 @@ describe('CellSizeAndPositionManager', () => {
 
     it('should return a visible range of cells for the beginning of the list if all cells fit in container', () => {
       const {cellSizeAndPositionManager} = getCellSizeAndPositionManager({
-        cellCount: 10, estimatedCellSize: 15,
+        cellCount: 10,
+        estimatedCellSize: 15,
       });
       const {start, stop} = cellSizeAndPositionManager.getVisibleCellRange({
         containerSize: 200,
